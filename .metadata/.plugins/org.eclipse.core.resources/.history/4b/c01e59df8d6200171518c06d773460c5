@@ -1,0 +1,51 @@
+package br.com.caelum.contas.controller;
+
+import javax.validation.Valid;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.servlet.ModelAndView;
+
+import br.com.caelum.contas.dao.ContaDAO;
+import br.com.caelum.contas.modelo.Conta;
+
+@Controller
+public class ContaController {
+
+	@RequestMapping("/form")
+	public String form(){
+		return "conta/formulario";
+	}
+	@RequestMapping("/adicionaConta")
+	public String adicionaConta(@Valid Conta conta){
+		new ContaDAO().adiciona(conta);
+		return "conta/add-conta-sucesso";
+	}
+	@RequestMapping("/deletaConta")
+	public String deletaConta(Conta conta){
+		new ContaDAO().remove(conta);
+		return "redirect:listaContas";
+	}
+	
+	@RequestMapping("/mostraConta")
+	public String mostraConta(Conta conta,Model model){
+		model.addAttribute(new ContaDAO().buscaPorId(conta.getId()));
+		return "conta/mostra";
+	}
+	@RequestMapping("/alteraConta")
+	public String alteraConta(Conta conta){
+		new ContaDAO().altera(conta);
+		return "redirect:listaContas";
+	}
+	
+	@RequestMapping("/listaContas")
+	public ModelAndView listaContas(){
+		
+		ModelAndView mv = new ModelAndView("conta/lista");
+		mv.addObject("contas",new ContaDAO().lista());
+		
+		return mv;
+		
+	}
+}

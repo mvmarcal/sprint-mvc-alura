@@ -1,0 +1,9 @@
+INDEX VERSION 1.127
+C:\Projetos\Estudos-Alura\SpringMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3965179310.index
+\contas\src
+C:\Projetos\Estudos-Alura\SpringMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1229844528.index
+\contas\src
+C:\Projetos\Estudos-Alura\SpringMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\512616878.index
+\contas\src
+C:\Projetos\Estudos-Alura\SpringMVC\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3033030740.index
+\contas\src

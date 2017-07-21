@@ -1,0 +1,3 @@
+conta.descricao.obrigatoria=*Descrição é obrigatória
+conta.descricao.tamanho=*Descrição deve ter no mínimo {min} caracteres.
+conta.sucesso=Conta adicionada com sucesso

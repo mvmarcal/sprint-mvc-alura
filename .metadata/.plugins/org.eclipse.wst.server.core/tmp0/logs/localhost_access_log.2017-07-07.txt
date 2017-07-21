@@ -1,0 +1,14 @@
+127.0.0.1 - - [07/Jul/2017:18:42:25 -0300] "GET / HTTP/1.1" 404 994
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:18:42:29 -0300] "GET /contas/listaContas HTTP/1.1" 200 4023
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:18:42:29 -0300] "GET /contas/resources/js/jquery.js HTTP/1.1" 200 83501
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:18:42:29 -0300] "GET /favicon.ico HTTP/1.1" 404 1016
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:18:42:55 -0300] "GET /contas/listaContas HTTP/1.1" 200 4078
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:18:43:11 -0300] "GET /contas/listaContas HTTP/1.1" 200 4513
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:18:43:31 -0300] "GET /contas/listaContas HTTP/1.1" 200 4128
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:18:43:37 -0300] "GET /contas/pagaConta?id=11 HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:18:43:42 -0300] "GET /contas/listaContas HTTP/1.1" 200 4083
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:18:43:45 -0300] "GET /contas/pagaConta?id=9 HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:18:43:49 -0300] "GET /contas/listaContas HTTP/1.1" 200 4049
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:18:49:03 -0300] "GET /contas/listaContas HTTP/1.1" 200 4242
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:18:49:07 -0300] "POST /contas/pagaConta HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [07/Jul/2017:18:49:17 -0300] "GET /contas/listaContas HTTP/1.1" 200 4207

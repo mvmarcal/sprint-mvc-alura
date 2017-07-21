@@ -1,0 +1,28 @@
+package br.com.caelum.contas.interceptor;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
+
+public class AutorizadorInterceptor extends HandlerInterceptorAdapter{
+	
+	public boolean preHandle(HttpServletRequest req,HttpServletResponse resp,Object controller) throws Exception{
+		String uri = req.getRequestURI();
+		System.out.println(req.getSession().getAttribute("usuarioLogado"));
+		if(uri.endsWith("login") || uri.endsWith("efetuaLogin") || uri.contains("resource")){
+			System.out.println("1");
+			return true;
+		}
+		
+		if(req.getSession().getAttribute("usuarioLogado") != null){
+			System.out.println("2");
+			return true;
+		}
+		System.out.println("3");
+		resp.sendRedirect("login");
+		return false;	
+		
+	}
+
+}
